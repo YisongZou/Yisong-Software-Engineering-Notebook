@@ -12,3 +12,5 @@
 11. ```Two pointer```( leetcode 986. Interval List Intersections 经典基础）
 12. 数组下标记得用```size_t```
 13. ```vector emplace(iterator, args..) emplace_back(args ..)``` 调用元素相关constructor放入container中
+14. ```vector``` 重载了 =， 可以用于深拷贝
+
