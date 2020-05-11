@@ -6,6 +6,7 @@
 5. 红黑树旋转方法总结：维基百科  https://zh.wikipedia.org/wiki/%E7%BA%A2%E9%BB%91%E6%A0%91
 6. 各种排序算法及比较https://blog.csdn.net/yushiyi6453/article/details/76407640
 7. 任何container 都可以用 .size() 得到长度
-8. sliding window (leetcode 438 经典基础)
+8. sliding window (leetcode 438 Find All Anagrams in a String 经典基础)
 9. vector 重载了 ==，比较相等的时候可以直接用
 10. In contaioner, front() back() return element, begin(), end() return iterator
+11. Two pointer( leetcode 986. Interval List Intersections 经典基础）
