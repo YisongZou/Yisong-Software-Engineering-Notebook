@@ -10,3 +10,5 @@
 9. vector 重载了 ==，比较相等的时候可以直接用
 10. In contaioner, front() back() return element, begin(), end() return iterator
 11. Two pointer( leetcode 986. Interval List Intersections 经典基础）
+12. 数组下标记得用size_t
+13. vector emplace(iterator, args..) emplace_back(args ..) 调用元素相关constructor放入container中
