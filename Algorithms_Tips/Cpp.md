@@ -18,3 +18,4 @@
      Trie():root(new TrieNode()) {}
     ``` 
     此指针指向的东西会自动析构 
+16. c++ STL 四种智能指针https://blog.csdn.net/k346k346/article/details/81478223
