@@ -13,20 +13,24 @@
 ```
 (1)vector:
 push_back(), pop_back(), 
+
 erase():iterator erase (const_iterator position); 
 iterator erase (const_iterator first, const_iterator last);
 Removes from the vector either a single element (position) or a range of elements([first,last)).
+
 clear(): Removes all elements from the vector (which are destroyed), leaving the container with a size of 0.
 ```
 ```
 (2)stack: 
 top(); push(); pop();
+
 (3)queue: 
 front(); back(); push(); pop();
 ```
 ```
 (4)unordered_map: 
 begin(); end(); 
+
 count(): Searches the container for elements whose key is k and returns the number of elements found. 
 Because unordered_map containers do not allow for duplicate keys, this means that the function actually
 returns 1 if an element with that key exists in the container, and zero otherwise.
