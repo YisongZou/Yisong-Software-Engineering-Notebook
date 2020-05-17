@@ -10,13 +10,20 @@
 9. ```vector``` 重载了 ==，比较相等的时候可以直接用```vector``` 重载了 =， 可以用于深拷贝
 10. In container, ```front() back() return a reference to the element, begin(), end() return iterator, pop() Removes the element on top, top() Returns a reference to the top element```
 ```
-vector():push_back(), pop_back(), erase():iterator erase (const_iterator position); iterator erase (const_iterator first, const_iterator last);Removes from the vector either a single element (position) or a range of elements([first,last)).
+vector:
+push_back(), pop_back(), 
+erase():iterator erase (const_iterator position); 
+iterator erase (const_iterator first, const_iterator last);
+Removes from the vector either a single element (position) or a range of elements([first,last)).
 clear(): Removes all elements from the vector (which are destroyed), leaving the container with a size of 0.
 ```
 ```
 stack: top(); push(); pop();
 queue: front(); back(); push(); pop();
-unordered_map(): 
+```
+```
+unordered_map(): begin(); end(); 
+count(): Searches the container for elements whose key is k and returns the number of elements found. Because unordered_map containers do not allow for duplicate keys, this means that the function actually returns 1 if an element with that key exists in the container, and zero otherwise.
 ```
 
 11. ```Two pointer```( leetcode 986. Interval List Intersections 经典基础）
