@@ -20,7 +20,8 @@ iterator erase (const_iterator position);
 iterator erase (const_iterator first, const_iterator last);
 Removes from the vector either a single element (position) or a range of elements([first,last)).
 
-clear(): Removes all elements from the vector (which are destroyed), leaving the container with a size of 0.
+clear(): Removes all elements from the vector (which are destroyed),
+leaving the container with a size of 0.
 ```
 
    ##### (2)string:
