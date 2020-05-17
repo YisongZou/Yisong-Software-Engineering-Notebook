@@ -33,7 +33,8 @@ character (2) iterator erase (const_iterator p);
 range (3)	iterator erase (const_iterator first, const_iterator last);
 (1) sequence
 Erases the portion of the string value that begins at the character position pos and spans 
-len characters (or until the end of the string, if either the content is too short or if len is string::npos.
+len characters (or until the end of the string, if either the content is too short or if 
+len is string::npos.
 Notice that the default argument erases all characters in the string (like member function clear).
 (2) character
 Erases the character pointed by p.
@@ -42,8 +43,8 @@ Erases the sequence of characters in the range [first,last).
 
 find():
 Searches the string for the first occurrence of the sequence specified by its arguments.
-When pos is specified, the search only includes characters at or after position pos, ignoring any 
-possible occurrences that include characters before pos.
+When pos is specified, the search only includes characters at or after position pos, 
+ignoring any possible occurrences that include characters before pos.
 string (1)	size_t find (const string& str, size_t pos = 0) const noexcept;
 c-string (2)	size_t find (const char* s, size_t pos = 0) const;
 buffer (3)	size_t find (const char* s, size_t pos, size_type n) const;
