@@ -8,7 +8,7 @@
 7. 任何```container``` 都可以用 ```.size()``` 得到长度
 8. ```sliding window``` (leetcode 438 Find All Anagrams in a String 经典基础)
 9. ```vector``` 重载了 ==，比较相等的时候可以直接用
-10. In contaioner, ```front() back() return element, begin(), end() return iterator```
+10. In container, ```front() back() return a reference to the element, begin(), end() return iterator, pop() Removes the element on top, top() Returns a reference to the top element```
 11. ```Two pointer```( leetcode 986. Interval List Intersections 经典基础）
 12. 数组下标记得用```size_t```
 13. ```vector emplace(iterator, args..) emplace_back(args ..)``` 调用元素相关constructor放入container中
