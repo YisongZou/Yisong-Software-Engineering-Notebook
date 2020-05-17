@@ -10,8 +10,9 @@
 9. ```vector``` 重载了 ==，比较相等的时候可以直接用```vector``` 重载了 =， 可以用于深拷贝
 10. In container, ```front() back() return a reference to the element, begin(), end() return iterator, 
  pop() Removes the element on top, top() Returns a reference to the top element```
+
+### (1)vector:
 ```
-(1)vector:
 push_back(), pop_back(), begin(), end(), front(), back();
 
 erase():
@@ -21,20 +22,15 @@ Removes from the vector either a single element (position) or a range of element
 
 clear(): Removes all elements from the vector (which are destroyed), leaving the container with a size of 0.
 ```
+
+### (2)string:
 ```
-(2)string:
 push_back(), pop_back(), begin(), end(), front(), back();
 
-erase();
-sequence (1)	
- string& erase (size_t pos = 0, size_t len = npos);
-character (2)	
-iterator erase (const_iterator p);
-range (3)	
-iterator erase (const_iterator first, const_iterator last);
-Erase characters from string
-Erases part of the string, reducing its length:
-
+erase():
+sequence (1)	string& erase (size_t pos = 0, size_t len = npos);
+character (2) iterator erase (const_iterator p);
+range (3)	iterator erase (const_iterator first, const_iterator last);
 (1) sequence
 Erases the portion of the string value that begins at the character position pos and spans len characters (or until the end of the string, if either the content is too short or if len is string::npos.
 Notice that the default argument erases all characters in the string (like member function clear).
@@ -43,36 +39,36 @@ Erases the character pointed by p.
 (3) range
 Erases the sequence of characters in the range [first,last).
 
-find(): Searches the string for the first occurrence of the sequence specified by its arguments.
+find():
+Searches the string for the first occurrence of the sequence specified by its arguments.
 When pos is specified, the search only includes characters at or after position pos, ignoring any 
 possible occurrences that include characters before pos.
-string (1)	
-size_t find (const string& str, size_t pos = 0) const noexcept;
-c-string (2)	
-size_t find (const char* s, size_t pos = 0) const;
-buffer (3)	
-size_t find (const char* s, size_t pos, size_type n) const;
-character (4)	
-size_t find (char c, size_t pos = 0) const noexcept;
+string (1)	size_t find (const string& str, size_t pos = 0) const noexcept;
+c-string (2)	size_t find (const char* s, size_t pos = 0) const;
+buffer (3)	size_t find (const char* s, size_t pos, size_type n) const;
+character (4)	size_t find (char c, size_t pos = 0) const noexcept;
 
-substr()
+substr():
 string substr (size_t pos = 0, size_t len = npos) const;
 Generate substring
 Returns a newly constructed string object with its value initialized to a copy of a substring of this object.
 The substring is the portion of the object that starts at character position pos and spans len characters (or until the end of the string, whichever comes first).
 ```
-```
-(3)stack: 
-top(); push(); pop();
 
-(4)queue: 
+### (3)stack: 
+```
+top(); push(); pop();
+```
+### (4)queue:
+```
 front(); back(); push(); pop();
 ```
+### (5)unordered_map: 
 ```
-(5)unordered_map: 
 begin(); end(); 
 
-count(): Searches the container for elements whose key is k and returns the number of elements found. 
+count(): 
+Searches the container for elements whose key is k and returns the number of elements found. 
 Because unordered_map containers do not allow for duplicate keys, this means that the function actually
 returns 1 if an element with that key exists in the container, and zero otherwise.
 ```
