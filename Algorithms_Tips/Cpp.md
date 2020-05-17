@@ -11,7 +11,7 @@
 10. In container, ```front() back() return a reference to the element, begin(), end() return iterator, 
  pop() Removes the element on top, top() Returns a reference to the top element```
 
-### (1)vector:
+   ##### (1)vector:
 ```
 push_back(), pop_back(), begin(), end(), front(), back();
 
@@ -23,7 +23,7 @@ Removes from the vector either a single element (position) or a range of element
 clear(): Removes all elements from the vector (which are destroyed), leaving the container with a size of 0.
 ```
 
-### (2)string:
+   ##### (2)string:
 ```
 push_back(), pop_back(), begin(), end(), front(), back();
 
@@ -32,7 +32,8 @@ sequence (1)	string& erase (size_t pos = 0, size_t len = npos);
 character (2) iterator erase (const_iterator p);
 range (3)	iterator erase (const_iterator first, const_iterator last);
 (1) sequence
-Erases the portion of the string value that begins at the character position pos and spans len characters (or until the end of the string, if either the content is too short or if len is string::npos.
+Erases the portion of the string value that begins at the character position pos and spans 
+len characters (or until the end of the string, if either the content is too short or if len is string::npos.
 Notice that the default argument erases all characters in the string (like member function clear).
 (2) character
 Erases the character pointed by p.
@@ -51,19 +52,21 @@ character (4)	size_t find (char c, size_t pos = 0) const noexcept;
 substr():
 string substr (size_t pos = 0, size_t len = npos) const;
 Generate substring
-Returns a newly constructed string object with its value initialized to a copy of a substring of this object.
-The substring is the portion of the object that starts at character position pos and spans len characters (or until the end of the string, whichever comes first).
+Returns a newly constructed string object with its value initialized to a copy of 
+a substring of this object.
+The substring is the portion of the object that starts at character position pos 
+and spans len characters (or until the end of the string, whichever comes first).
 ```
 
-### (3)stack: 
+   ##### (3)stack: 
 ```
 top(); push(); pop();
 ```
-### (4)queue:
+   ##### (4)queue:
 ```
 front(); back(); push(); pop();
 ```
-### (5)unordered_map: 
+   ##### (5)unordered_map: 
 ```
 begin(); end(); 
 
