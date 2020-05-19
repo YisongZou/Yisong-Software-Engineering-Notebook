@@ -84,3 +84,40 @@ return_types：返回类型，函数返回一列值。return_types 是该列值�
 函数体：函数定义的代码集合。
 ```
 
+```
+函数返回多个值
+Go 函数可以返回多个值，例如：
+
+实例
+package main
+
+import "fmt"
+
+func swap(x, y string) (string, string) {
+   return y, x
+}
+
+func main() {
+   a, b := swap("Google", "Runoob")
+   fmt.Println(a, b)
+}
+以上实例执行结果为：
+
+Runoob Google
+```
+
+```
+引用传递是指在调用函数时将实际参数的地址传递到函数中，那么在函数中对参数所进行的修改，将影响到实际参数。
+
+引用传递指针参数传递到函数内，以下是交换函数 swap() 使用了引用传递：
+
+/* 定义交换值函数*/
+swap(&a, &b)
+func swap(x *int, y *int) {
+   var temp int
+   temp = *x    /* 保持 x 地址上的值 */
+   *x = *y      /* 将 y 值赋给 x */
+   *y = temp    /* 将 temp 值赋给 y */
+}
+```
+
