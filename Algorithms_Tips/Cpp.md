@@ -22,6 +22,15 @@ Removes from the vector either a single element (position) or a range of element
 
 clear(): Removes all elements from the vector (which are destroyed),
 leaving the container with a size of 0.
+
+emplace:
+emplace(iterator, args..) emplace_back(args ..) 调用元素相关constructor放入container中
+Construct and insert element
+The container is extended by inserting a new element at position. This new element is 
+constructed in place using args as the arguments for its construction.
+This effectively increases the container size by one.
+An automatic reallocation of the allocated storage space happens if -and only if- the
+new vector size surpasses the current vector capacity.
 ```
 
    ##### (2)string:
@@ -80,12 +89,11 @@ returns 1 if an element with that key exists in the container, and zero otherwis
 
 11. ```Two pointer```( leetcode 986. Interval List Intersections 经典基础）
 12. 数组下标记得用```size_t```
-13. ```vector emplace(iterator, args..) emplace_back(args ..)``` 调用元素相关constructor放入container中
-14. ```
+13. ```
      unique_ptr<TrieNode> root;
      Trie():root(new TrieNode()) {}
     ``` 
     此指针指向的东西会自动析构 
-15. c++ STL 四种智能指针https://blog.csdn.net/k346k346/article/details/81478223
+14. c++ STL 四种智能指针https://blog.csdn.net/k346k346/article/details/81478223
 
      
