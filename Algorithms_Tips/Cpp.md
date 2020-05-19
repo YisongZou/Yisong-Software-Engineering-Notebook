@@ -1,4 +1,5 @@
 # Cpp
+### 比较好的总结：https://www.cnblogs.com/skyfsm/p/6934246.html
 1. ```unordered_map``` 不用初始化，元素会自动初始化
 2. ```stringstream fstream iostream``` 是io都可以用的
 3. 数据结构中各种树总结https://www.jianshu.com/p/6f573afd2501
