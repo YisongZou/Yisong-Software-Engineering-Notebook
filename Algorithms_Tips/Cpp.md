@@ -1,6 +1,6 @@
 # Cpp
 ### 比较好的总结：https://www.cnblogs.com/skyfsm/p/6934246.html
-1. ```unordered_map``` 不用初始化，元素会自动初始化
+1. ```unordered_map``` 直接map[key] = value即可， 而vector等如果相应元素没初始化，需要用push_back();
 2. ```stringstream fstream iostream``` 是io都可以用的
 3. 数据结构中各种树总结https://www.jianshu.com/p/6f573afd2501
 4. 自平衡二叉树旋转方法总结https://blog.csdn.net/saasanken/article/details/80796178
