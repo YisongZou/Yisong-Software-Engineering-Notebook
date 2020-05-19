@@ -23,7 +23,7 @@ Removes from the vector either a single element (position) or a range of element
 clear(): Removes all elements from the vector (which are destroyed),
 leaving the container with a size of 0.
 
-emplace:
+emplace():
 emplace(iterator, args..) emplace_back(args ..) 调用元素相关constructor放入container中
 Construct and insert element
 The container is extended by inserting a new element at position. This new element is 
