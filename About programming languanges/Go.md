@@ -180,3 +180,41 @@ nil在概念上和其它语言的null、None、nil、NULL一样，都指代零�
 
 一个指针变量通常缩写为 ptr。
 ```
+11. 结构体
+```
+package main
+
+import "fmt"
+
+type Books struct {
+   title string
+   author string
+   subject string
+   book_id int
+}
+
+
+func main() {
+
+    // 创建一个新的结构体
+    fmt.Println(Books{"Go 语言", "www.runoob.com", "Go 语言教程", 6495407})
+
+    // 也可以使用 key => value 格式
+    fmt.Println(Books{title: "Go 语言", author: "www.runoob.com", subject: "Go 语言教程", book_id: 6495407})
+
+    // 忽略的字段为 0 或 空
+   fmt.Println(Books{title: "Go 语言", author: "www.runoob.com"})
+}
+```
+```
+结构体指针
+你可以定义指向结构体的指针类似于其他指针变量，格式如下：
+
+var struct_pointer *Books
+以上定义的指针变量可以存储结构体变量的地址。查看结构体变量地址，可以将 & 符号放置于结构体变量前：
+
+struct_pointer = &Book1
+使用结构体指针访问结构体成员，使用 "." 操作符：
+
+struct_pointer.title
+```
