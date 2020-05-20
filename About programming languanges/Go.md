@@ -433,10 +433,10 @@ var map_variable map[key_data_type]value_data_type
 map_variable := make(map[key_data_type]value_data_type)
 ```
 15.go语言接口
-```
+
 https://www.runoob.com/go/go-interfaces.html
-```
+
 16. Go 并发
-```
+
 https://www.runoob.com/go/go-concurrent.html
-```
+
