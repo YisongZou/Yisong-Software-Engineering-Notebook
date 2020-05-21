@@ -1,4 +1,4 @@
-### https://zhuanlan.zhihu.com/p/29502001 Go 常用命令
+### https://studygolang.com/articles/5226 Go 常用命令
 1. ### Udemy course:
    ```
       Learn How To Code: Google's Go (golang) Programming Language
@@ -6,6 +6,7 @@
 https://www.udemy.com/course/learn-how-to-code/learn/lecture/3993384?start=0#overview
 
 2. 菜鸟教程：https://www.runoob.com/go/go-tutorial.html
+   go中文网 https://studygolang.com/
 3. 需要注意的是 { 不能单独放在一行，所以以下代码在运行时会产生错误：
 ```
 package main
