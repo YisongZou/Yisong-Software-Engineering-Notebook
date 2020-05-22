@@ -1,2 +1,2 @@
-1. Go module 介绍:
+1. Go module 详细使用:
 https://learnku.com/articles/27401
