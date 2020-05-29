@@ -2,6 +2,9 @@
 Go module 详细使用:
 https://learnku.com/articles/27401
 
+go mod 使用：
+https://juejin.im/post/5c8e503a6fb9a070d878184a
+
 Create projects independent of $GOPATH using Go Modules:
 https://medium.com/mindorks/create-projects-independent-of-gopath-using-go-modules-802260cdfb51
 
