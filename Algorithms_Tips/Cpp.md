@@ -97,5 +97,24 @@ returns 1 if an element with that key exists in the container, and zero otherwis
     此指针指向的东西会自动析构 
 14. c++ STL 四种智能指针https://blog.csdn.net/k346k346/article/details/81478223
 15. c++ map与unordered_map区别及使用 https://blog.csdn.net/BillCYJ/article/details/78985895 
+16. 自定义sort:
+ ```
+ class Solution {
+public:
+    int twoCitySchedCost(vector<vector<int>>& costs) {
+        sort(costs.begin(), costs.end(), mySort);
+        int total = 0;
+     int n = costs.size()/2;
+     for(int i = 0 ; i < n; ++i){
+         total += costs[i][0] + costs[i + n][1];
+     }
+        return total;
+    }
+private:
+    static bool mySort(const vector<int>  & a, const vector<int> & b){
+        return (a[0] - a[1] < b[0] - b [1]);
+    }
+};
+ ```
  
      
