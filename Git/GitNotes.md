@@ -42,3 +42,7 @@ $ git br
 git checkout -t origin/2.0.0
 ```
 能够直接新建本地分支，将远程分支提取出来。
+
+2. git 修改用户名以及提交邮箱
+
+https://blog.csdn.net/helinlin007/article/details/52266169
