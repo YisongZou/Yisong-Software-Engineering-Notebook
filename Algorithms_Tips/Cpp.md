@@ -84,11 +84,11 @@ and spans len characters (or until the end of the string, whichever comes first)
 
    ##### (3)stack: 
 ```
-top(); push(); pop();
+top(); push(); void pop();
 ```
    ##### (4)queue:
 ```
-front(); back(); push(); pop();
+front(); back(); push(); void pop();
 ```
    ##### (5)unordered_map: 
 ```
