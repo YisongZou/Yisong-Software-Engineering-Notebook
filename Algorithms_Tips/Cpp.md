@@ -117,4 +117,11 @@ private:
 };
  ```
 17. stringstream 空格分割字符串：https://blog.csdn.net/oNever_say_love/article/details/49123935
-     
+ ```
+     重载输入运算符>>
+     重载输出运算符<<
+     本节要达到的目标是让复数的输入输出和 int、float 等基本类型一样简单。假设 num1、num2 是复数，那么输出形式就是：
+     cout<<num1<<num2<<endl;
+     输入形式就是：
+     cin>>num1>>num2;
+```
