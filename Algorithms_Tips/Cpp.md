@@ -36,6 +36,18 @@ new vector size surpasses the current vector capacity.
 
    ##### (2)string:
 ```
+std::string::operator+=
+C++98C++11
+string (1)	
+string& operator+= (const string& str);
+c-string (2)	
+string& operator+= (const char* s);
+character (3)	
+string& operator+= (char c);
+initializer list (4)	
+string& operator+= (initializer_list<char> il);
+```
+```
 push_back(char c), pop_back()(the last character), begin(), end(), front(), back();
 
 erase():
