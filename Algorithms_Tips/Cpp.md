@@ -144,6 +144,11 @@ int main(){
     return 0;
 }
 ```
+```
+We can insert text into a stringstream with << and then extract it back with >>
+```
+
+与上方不同的：
  ```
      重载输入运算符>>
      重载输出运算符<<
