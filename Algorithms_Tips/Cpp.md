@@ -36,7 +36,7 @@ new vector size surpasses the current vector capacity.
 
    ##### (2)string:
 ```
-push_back(), pop_back(), begin(), end(), front(), back();
+push_back(char c), pop_back()(the last character), begin(), end(), front(), back();
 
 erase():
 sequence (1)	string& erase (size_t pos = 0, size_t len = npos);
