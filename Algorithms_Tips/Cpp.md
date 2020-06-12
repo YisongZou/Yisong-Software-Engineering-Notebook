@@ -14,7 +14,7 @@
 
    ##### (1)vector:
 ```
-push_back(), pop_back(), begin(), end(), front(), back();
+push_back(), void pop_back(), begin(), end(), front(), back();
 
 erase():
 iterator erase (const_iterator position); 
