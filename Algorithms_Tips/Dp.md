@@ -1,9 +1,9 @@
 dp应该使用iteration，尽量优化空间不存储
-1.剑指offer面试题46. 把数字翻译成字符串 https://leetcode-cn.com/problemset/lcof/
+#### 1.剑指offer面试题46. 把数字翻译成字符串 https://leetcode-cn.com/problemset/lcof/
 
 利用iteration是自底向上的dp，而利用迭代（recursion）是自顶向下dp
 
-2.面试题10- I. 斐波那契数列: https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/
+#### 2.面试题10- I. 斐波那契数列: https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/
 
 ```
 递归法：
