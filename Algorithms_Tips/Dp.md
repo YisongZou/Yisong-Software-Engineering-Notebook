@@ -16,3 +16,25 @@ dp应该使用iteration，尽量优化空间不存储
 原理： 以斐波那契数列性质 f(n + 1) = f(n) + f(n - 1)f(n+1)=f(n)+f(n−1) 为转移方程。
 从计算效率、空间复杂度上看，动态规划是本题的最佳解法。
 ```
+#### 3. 滑动数组法dp，节约空间
+
+```
+此处sum应该放在循环第一行，得出的是当前i对应的sum值
+class Solution {
+public:
+    int numWays(int n) {
+        if(n == 0 || n == 1){
+            return 1;
+        }
+        int a = 1;
+        int b = 1;
+        int sum = 2;
+        for(int i = 2; i <= n; ++i ){
+            sum = (a + b) % 1000000007;
+            a = b;
+            b = sum;         
+        }
+        return sum;
+    }
+};
+```
