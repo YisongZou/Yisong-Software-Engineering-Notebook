@@ -1,4 +1,4 @@
-1. git切换到远程分支
+#### 1. git切换到远程分支
 https://blog.csdn.net/tanningzhong/article/details/79724488
 
 远程仓库 git clone 下来，当你执行 git branch，你只会看到
@@ -43,6 +43,12 @@ git checkout -t origin/2.0.0
 ```
 能够直接新建本地分支，将远程分支提取出来。
 
-2. git 修改用户名以及提交邮箱
+#### 2. git 修改用户名以及提交邮箱
 
 https://blog.csdn.net/helinlin007/article/details/52266169
+
+#### 3.git删除远程及本地分支：
+
+删除远程：git push origin --delete <branch>
+
+删除本地：git branch -dr origin/<branch>
