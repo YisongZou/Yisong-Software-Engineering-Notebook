@@ -49,6 +49,8 @@ https://blog.csdn.net/helinlin007/article/details/52266169
 
 #### 3.git删除远程及本地分支：
 
+```
 删除远程：git push origin --delete <branch>
 
 删除本地：git branch -dr origin/<branch>
+```
