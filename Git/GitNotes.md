@@ -52,5 +52,12 @@ https://blog.csdn.net/helinlin007/article/details/52266169
 ```
 删除远程：git push origin --delete <branch>
 
-删除本地：git branch -dr origin/<branch>
+删除跟踪：git branch -dr origin/<branch>
+
+删除本地分支： 
+查看项目的分支们(包括本地和远程) 
+命令行 : $ git branch -a     例如，$ git branch -a 
+
+删除本地分支 
+命令行 : $ git branch -d <BranchName>
 ```
