@@ -30,3 +30,14 @@ ilist3初始化为两个迭代器指定范围中元素的拷贝，范围中的�
 指定值初始化，ilist5被初始化为包含7个值为3的int
 
 ```参考：```https://blog.csdn.net/veghlreywg/article/details/80400382
+
+#### 二维vector
+
+```
+//二维vector初始化
+    vector< vector<int> > vt;//初始化一个 二维vector
+    vector<vector<int> > vect(vt);//使用另一个 二维 vector 初始化当前二维vector
+    vector< vector<int> > vec(row,vector<int>(column));//初始化一个 二维的vector 行row,列column,且值为0
+    vector<vector<int> > visited(row,vector<int>(column,6));//初始化一个 二维vector 行row,列column ,且 值为data=6 自定义data;
+    vector<vector<int> > vecto(row,vector<int>(vt[0].begin()+1,vt[0].begin()+3));////初始化一个 二维vector 行row,第二个参数为一维vector;
+```
