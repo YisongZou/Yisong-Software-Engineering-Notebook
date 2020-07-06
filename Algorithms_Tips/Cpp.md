@@ -100,6 +100,18 @@ Searches the container for elements whose key is k and returns the number of ele
 Because unordered_map containers do not allow for duplicate keys, this means that the function actually
 returns 1 if an element with that key exists in the container, and zero otherwise.
 ```
+##### (6)deque:
+```
+
+push_back
+Add element at the end (public member function )
+push_front
+Insert element at beginning (public member function )
+pop_back
+Delete last element (public member function )
+pop_front
+Delete first element (public member function )
+```
 
 11. ```Two pointer```( leetcode 986. Interval List Intersections 经典基础）
 12. 数组下标记得用```size_t```
