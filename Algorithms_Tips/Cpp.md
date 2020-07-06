@@ -7,7 +7,7 @@
 4. 自平衡二叉树旋转方法总结https://blog.csdn.net/saasanken/article/details/80796178
 5. 红黑树旋转方法总结：维基百科  https://zh.wikipedia.org/wiki/%E7%BA%A2%E9%BB%91%E6%A0%91
 6. 各种排序算法及比较https://blog.csdn.net/yushiyi6453/article/details/76407640
-7. 任何```container``` 都可以用 ```.size()``` 得到长度
+7. 任何```container``` 都可以用 ```.size()``` 得到长度, 用reverse(a.begin(), a.end())进行reverse
 8. ```sliding window``` (leetcode 438 Find All Anagrams in a String 经典基础)
 9. ```vector``` 重载了 ==，比较相等的时候可以直接用```vector``` 重载了 =， 可以用于深拷贝
 10. In container, ```front() back() return a reference to the element, begin(), end() return iterator, 
