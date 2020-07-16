@@ -107,7 +107,6 @@ returns 1 if an element with that key exists in the container, and zero otherwis
 ##### (6)deque:
 ```
 
-##### (6)deque:
 push_back
 Add element at the end (public member function )
 push_front
@@ -117,6 +116,24 @@ Delete last element (public member function )
 pop_front
 Delete first element (public member function )
 ```
+##### (7)list:
+```
+push_front
+Insert element at beginning (public member function )
+pop_front
+Delete first element (public member function )
+emplace_back 
+Construct and insert element at the end (public member function )
+push_back
+Add element at the end (public member function )
+pop_back
+Delete last element (public member function )
+emplace 
+Construct and insert element (public member function )
+insert
+Insert elements (public member function )
+```
+
 
 11. ```Two pointer```( leetcode 986. Interval List Intersections 经典基础）
 12. 数组下标记得用```size_t```
