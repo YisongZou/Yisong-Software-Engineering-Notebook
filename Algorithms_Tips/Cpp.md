@@ -1,6 +1,7 @@
 # Cpp
 ### STL比较好的总结：https://www.cnblogs.com/skyfsm/p/6934246.html
 判断容器是否为空： .empty()
+
 记得用 size_t 类型
 
 函数返回值的几种情况https://blog.csdn.net/hankai1024/article/details/8039770
