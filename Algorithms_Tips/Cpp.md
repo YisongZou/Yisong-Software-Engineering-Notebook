@@ -107,6 +107,7 @@ returns 1 if an element with that key exists in the container, and zero otherwis
 ##### (6)deque:
 ```
 
+##### (6)deque:
 push_back
 Add element at the end (public member function )
 push_front
