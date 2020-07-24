@@ -4,6 +4,8 @@
 
 记得用 size_t 类型
 
+struct默认public，class默认private
+
 函数返回值的几种情况https://blog.csdn.net/hankai1024/article/details/8039770
 1. ```unordered_map``` 直接map[key] = value即可， 而vector等如果相应元素没初始化，需要用push_back()，同时unordered_map<int,int> value默认初始值为0;
 2. ```stringstream fstream iostream``` 是io都可以用的
