@@ -4,6 +4,8 @@ All of programming
 https://play.google.com/books/reader?id=-zViCgAAQBAJ&pg=GBS.PA617.w.5.0.58
 
 ```
+https://en.wikipedia.org/wiki/Polymorphism_(computer_science)
+
 多态相关
 
 函数重载属于一种多态，叫做特设多态（Ad hoc polymorphism）。特设多态的意思是，一个函数有，
