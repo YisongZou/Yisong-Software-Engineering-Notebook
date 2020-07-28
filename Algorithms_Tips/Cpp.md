@@ -1,5 +1,7 @@
 # Cpp
 ### STL比较好的总结：https://www.cnblogs.com/skyfsm/p/6934246.html
+std::reverse(a.begin(),a.end()), #include<algorithm>
+
 判断容器是否为空： .empty()
 
 记得用 size_t 类型
