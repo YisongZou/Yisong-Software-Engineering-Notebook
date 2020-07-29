@@ -1,5 +1,21 @@
 # Cpp
 ### STL比较好的总结：https://www.cnblogs.com/skyfsm/p/6934246.html
+
+string std::to_string (int val);
+
+```
+const char* c_str() const noexcept;
+
+  char * cstr = new char [str.length()+1];
+  std::strcpy (cstr, str.c_str());
+```
+
+```
+   int myint1 = std::stoi(str1);
+    int myint2 = std::stoi(str2);
+
+```
+
 std::reverse(a.begin(),a.end()), #include<algorithm>
 
 判断容器是否为空： .empty()
