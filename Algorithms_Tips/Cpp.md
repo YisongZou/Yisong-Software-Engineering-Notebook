@@ -17,9 +17,9 @@ const char* c_str() const noexcept;
     int myint2 = std::stoi(str2);
 
 ```
-
+```
 std::reverse(a.begin(),a.end()), #include<algorithm>
-
+```
 判断容器是否为空： .empty()
 
 记得用 size_t 类型
