@@ -2,6 +2,9 @@
 ### STL比较好的总结：https://www.cnblogs.com/skyfsm/p/6934246.html
 
 ```
+stringstream 用于类型转换更方便 #include<sstream>
+```
+```
 string std::to_string (int val);
 ```
 
@@ -187,6 +190,7 @@ private:
  ```
 17. stringstream 空格分割字符串：https://blog.csdn.net/oNever_say_love/article/details/49123935
 
+并且可用于类型转换
 ```
 #include<iostream>
 #include<string>
