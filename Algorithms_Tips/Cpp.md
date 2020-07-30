@@ -1,6 +1,16 @@
 # Cpp
 ### STL比较好的总结：https://www.cnblogs.com/skyfsm/p/6934246.html
 ```
+最近发现一个在C++中引用很广泛的一个头文件
+
+#include <bits/stdc++.h>
+
+了解发现它是C++中支持的一个几乎万能的头文件，几乎包含所有的可用到的C++库函数。以后写代码就可以直接引用这一个头文件了，不需要在写一大堆vector、string、map、stack、、、、。
+
+https://blog.csdn.net/snow_rain_1314/article/details/80014301
+```
+
+```
 string getString(char x) 
 { 
     // string class has a constructor 
