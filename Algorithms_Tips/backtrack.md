@@ -6,4 +6,4 @@
 的某个状态的点称为“回溯点”。许多复杂的，规模较大的问题都可以使用回溯法，有“通用解题方法”的美称。
 ```
 1. https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof/solution/mian-shi-ti-12-ju-zhen-zhong-de-lu-jing-shen-du-yo/
-2. 39. Combination Sum  https://leetcode.com/problems/combination-sum/
+2. 39Combination Sum  https://leetcode.com/problems/combination-sum/
