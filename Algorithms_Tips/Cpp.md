@@ -1,4 +1,5 @@
 # Cpp
+### unordered_map 和 unordered_set 都是不按值排序的，而map和set会自动按key或set中的值从小到大排序
 ### STL比较好的总结：https://www.cnblogs.com/skyfsm/p/6934246.html
 ### 刷题模板总结： https://blog.csdn.net/fuxuemingzhu/article/details/101900729
 ```
