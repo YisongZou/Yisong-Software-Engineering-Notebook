@@ -254,6 +254,82 @@ private:
     }
 };
  ```
+ ```
+ bool mySort(const vector<int>& a, const vector<int>& b){
+    if(a[2] == b[2]){
+        return a[3] < b[3];
+    }
+    else{
+        return a[2] > b[2];
+    }
+}
+
+vector<int> getUnallotedUsers(vector<vector<int>> input,int shares){
+    vector<int> ans;
+    if(shares <= 0){
+        for(int i = 0; i < input.size(); ++i){
+            ans.push_back(input[i][0]);
+        }
+        sort(ans.begin(),ans.end());
+        return ans;
+    }
+    sort(input.begin(), input.end(), mySort);
+    size_t i = 0;
+    for(; i < input.size() - 1; ++i){
+        int rest = 0;
+        if(input[i][2] == input[i + 1][2]){
+        while(input[i][2] == input[i + 1][2] && shares > 0){
+            --shares;        
+            rest += (input[i][1] - 1);
+            ++i;
+          }
+        if(shares <= 0){
+            --i;
+            break;
+        }
+            --shares;
+            rest += (input[i][1] - 1);
+        if(shares <= 0){
+            break;
+        }
+        if(shares - rest <= 0){
+            shares -= rest;
+            break;
+        }
+        }
+        else{
+            shares -= input[i][1];
+            if(shares <= 0){
+                break;
+            }
+        }
+        }
+    ++i;
+    if(i == input.size() - 1){
+        if(shares <= 0){
+            ans.push_back(input[i][0]);
+            return ans;
+        }
+        else{
+            return ans;
+        }
+    }
+    for(int j = i; j < input.size(); ++j){
+        ans.push_back(input[j][0]);
+    }
+    sort(ans.begin(),ans.end());
+    return ans;
+}
+
+int main() {
+    vector<vector<int>> input = {{1,5,5,0},{2,7,8,1},{3,7,5,1},{4,10,3,3}};
+    vector<int> output = getUnallotedUsers(input, 18);
+        for(int val: output){
+             cout << val << endl;
+        }
+    return EXIT_SUCCESS;
+}
+ ```
 17. stringstream 空格分割字符串：https://blog.csdn.net/oNever_say_love/article/details/49123935
 
 并且可用于类型转换
