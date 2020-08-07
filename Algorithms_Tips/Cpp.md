@@ -254,7 +254,9 @@ private:
     }
 };
  ```
+                                 
  ```
+根据两个条件进行sort
  bool mySort(const vector<int>& a, const vector<int>& b){
     if(a[2] == b[2]){
         return a[3] < b[3];
