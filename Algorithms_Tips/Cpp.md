@@ -1,5 +1,6 @@
 # Cpp
 
+#### HOW TO SPLIT A STRING IN C++ http://www.martinbroadhurst.com/how-to-split-a-string-in-c.html
 #### string和stringstream用法总结 https://blog.csdn.net/zaishaoyi/article/details/46682033
 #### C++:cin、cin.getline()、getline()的用法 https://blog.csdn.net/JIEJINQUANIL/article/details/51394167
 #### C++ 标准输出控制小数点后位数的方法 https://blog.csdn.net/JIEJINQUANIL/article/details/51394167
