@@ -41,6 +41,7 @@ string std::to_string (int val);
 ```
 
 ```
+string to char*
 const char* c_str() const noexcept;
 
   char * cstr = new char [str.length()+1];
