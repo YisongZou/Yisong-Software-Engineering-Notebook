@@ -37,7 +37,13 @@ int main() {
 stringstream 用于类型转换更方便 #include<sstream>
 ```
 ```
+int to string
 string std::to_string (int val);
+
+string to int
+int myint1 = std::stoi(str1);
+int myint2 = std::stoi(str2);
+
 ```
 
 ```
@@ -46,12 +52,6 @@ const char* c_str() const noexcept;
 
   char * cstr = new char [str.length()+1];
   std::strcpy (cstr, str.c_str());
-```
-
-```
-   int myint1 = std::stoi(str1);
-    int myint2 = std::stoi(str2);
-
 ```
 ```
 std::reverse(a.begin(),a.end()), #include<algorithm>
