@@ -8,6 +8,12 @@
 ### STL比较好的总结：https://www.cnblogs.com/skyfsm/p/6934246.html
 ### 刷题模板总结： https://blog.csdn.net/fuxuemingzhu/article/details/101900729
 ```
+是的话返回>0的int
+不是的话返回0
+ if (isdigit(cur))
+isalpha(cur)
+```
+```
 最近发现一个在C++中引用很广泛的一个头文件
 
 #include <bits/stdc++.h>
