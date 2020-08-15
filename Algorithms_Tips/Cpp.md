@@ -348,6 +348,7 @@ int main() {
 
 并且可用于类型转换
 ```
+空格分割
 #include<iostream>
 #include<string>
 #include<sstream>
@@ -372,6 +373,12 @@ int main(){
     }
     return 0;
 }
+
+符号分割
+stringstream s1(artifacts);
+    string s;
+    while (getline(s1, s, ',')) arts.push_back(s);
+    s = "";
 ```
 ```
 We can insert text into a stringstream with << and then extract it back with >>
