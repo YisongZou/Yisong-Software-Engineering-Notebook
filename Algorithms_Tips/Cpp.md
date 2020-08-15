@@ -2,7 +2,7 @@
 
 #### HOW TO SPLIT A STRING IN C++ http://www.martinbroadhurst.com/how-to-split-a-string-in-c.html
 #### string和stringstream用法总结 https://blog.csdn.net/zaishaoyi/article/details/46682033
-#### C++:cin、cin.getline()、getline()的用法 https://blog.csdn.net/JIEJINQUANIL/article/details/51394167
+#### C++:cin、cin.getline()、getline()的用法 https://blog.csdn.net/u011630575/article/details/79721024
 #### C++ 标准输出控制小数点后位数的方法 https://blog.csdn.net/JIEJINQUANIL/article/details/51394167
 ### unordered_map 和 unordered_set 都是不按值排序的，而map和set会自动按key或set中的值从小到大排序
 ### STL比较好的总结：https://www.cnblogs.com/skyfsm/p/6934246.html
