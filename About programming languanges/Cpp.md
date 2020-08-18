@@ -24,3 +24,7 @@ https://en.wikipedia.org/wiki/Polymorphism_(computer_science)
 所以需要运行时通过动态分派查找具体的类型对应的实现，所以包含多态是动态多态。在好多语言中，
 为了凸现这个参数要动态分派，我们会把它放到点号前面，比如 foo.make('zhihu') 中的 foo
 ```
+
+```
+虚函数是C++中用于实现多态(polymorphism)的机制。核心理念就是通过基类访问派生类定义的函数。
+```
