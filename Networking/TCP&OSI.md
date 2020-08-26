@@ -24,7 +24,7 @@ OSI七层模型及其包含的协议如下:
 
 TCP/IP 4层模型包括：
 
-网络接口层：MAC VLAN
+link层：MAC VLAN
 
 网络层:IP ARP ICMP
 
