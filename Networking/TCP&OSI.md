@@ -30,5 +30,5 @@ link层：MAC VLAN
 
 传输层:TCP UDP
 
-应用层:HTTP DNS SMTP
+应用层:HTTP DNS SMTP DHCP
 ```
