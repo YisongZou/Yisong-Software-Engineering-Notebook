@@ -31,4 +31,10 @@ link层：MAC VLAN
 传输层:TCP UDP
 
 应用层:HTTP DNS SMTP DHCP
+
+
 ```
+```
+TCP、UDP、IP报头结构体分析
+```
+https://blog.csdn.net/laoniu_c/article/details/39269165
