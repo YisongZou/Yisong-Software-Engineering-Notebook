@@ -80,7 +80,7 @@ std::reverse(a.begin(),a.end()), #include<algorithm>
 #### 7. 任何```container``` 都可以用 ```.size()``` 得到长度, 用reverse(a.begin(), a.end())进行reverse
 #### 8. ```sliding window``` (leetcode 438 Find All Anagrams in a String 经典基础)
 #### 9. ```vector``` 重载了 ==，比较相等的时候可以直接用```vector``` 重载了 =， 可以用于深拷贝
-#### 10. 
+#### 10. 数据结构
 In container, 
 ```
 front() back() return a reference to the element, begin(), end() return iterator, 
@@ -249,11 +249,11 @@ int main ()
 size_t
 ```
 #### 13. 
-    ```
-     unique_ptr<TrieNode> root;
-     Trie():root(new TrieNode()) {}
-    ``` 
-   此指针指向的东西会自动析构 
+```
+unique_ptr<TrieNode> root;
+Trie():root(new TrieNode()) {}
+```
+此指针指向的东西会自动析构 
 #### 14. c++ STL 四种智能指针https://blog.csdn.net/k346k346/article/details/81478223
 #### 15. c++ map与unordered_map区别及使用 https://blog.csdn.net/BillCYJ/article/details/78985895 
 #### 16. sort:
