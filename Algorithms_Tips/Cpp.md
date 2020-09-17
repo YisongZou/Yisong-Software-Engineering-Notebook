@@ -4,9 +4,9 @@
 #### string和stringstream用法总结 https://blog.csdn.net/zaishaoyi/article/details/46682033
 #### C++:cin、cin.getline()、getline()的用法 https://blog.csdn.net/u011630575/article/details/79721024
 #### C++ 标准输出控制小数点后位数的方法 https://blog.csdn.net/JIEJINQUANIL/article/details/51394167
-### unordered_map 和 unordered_set 都是不按值排序的，而map和set会自动按key或set中的值从小到大排序
-### STL比较好的总结：https://www.cnblogs.com/skyfsm/p/6934246.html
-### 刷题模板总结： https://blog.csdn.net/fuxuemingzhu/article/details/101900729
+#### unordered_map 和 unordered_set 都是不按值排序的，而map和set会自动按key或set中的值从小到大排序
+#### STL比较好的总结：https://www.cnblogs.com/skyfsm/p/6934246.html
+#### 刷题模板总结： https://blog.csdn.net/fuxuemingzhu/article/details/101900729
 ```
 是的话返回>0的int
 不是的话返回0
@@ -22,7 +22,7 @@ isalpha(cur)
 
 https://blog.csdn.net/snow_rain_1314/article/details/80014301
 ```
-
+#### String char int 转换
 ```
 string getString(char x) 
 { 
@@ -64,14 +64,14 @@ const char* c_str() const noexcept;
 ```
 std::reverse(a.begin(),a.end()), #include<algorithm>
 ```
-判断容器是否为空： .empty()
+#### 判断容器是否为空： .empty()
 
-记得用 size_t 类型
+#### 记得用 size_t 类型，记得用long
 
-struct默认public，class默认private
+#### struct默认public，class默认private
 
-函数返回值的几种情况https://blog.csdn.net/hankai1024/article/details/8039770
-##### 1. ```unordered_map``` 直接map[key] = value即可， 而vector等如果相应元素没初始化，需要用push_back()，同时unordered_map<int,int> value默认初始值为0;
+#### 函数返回值的几种情况https://blog.csdn.net/hankai1024/article/details/8039770
+#### 1. ```unordered_map``` 直接map[key] = value即可， 而vector等如果相应元素没初始化，需要用push_back()，同时unordered_map<int,int> value默认初始值为0;
 2. ```stringstream fstream iostream``` 是io都可以用的
 3. 数据结构中各种树总结https://www.jianshu.com/p/6f573afd2501
 4. 自平衡二叉树旋转方法总结https://blog.csdn.net/saasanken/article/details/80796178
