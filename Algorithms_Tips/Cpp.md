@@ -72,15 +72,15 @@ std::reverse(a.begin(),a.end()), #include<algorithm>
 
 #### 函数返回值的几种情况https://blog.csdn.net/hankai1024/article/details/8039770
 #### 1. ```unordered_map``` 直接map[key] = value即可， 而vector等如果相应元素没初始化，需要用push_back()，同时unordered_map<int,int> value默认初始值为0;
-2. ```stringstream fstream iostream``` 是io都可以用的
-3. 数据结构中各种树总结https://www.jianshu.com/p/6f573afd2501
-4. 自平衡二叉树旋转方法总结https://blog.csdn.net/saasanken/article/details/80796178
-5. 红黑树旋转方法总结：维基百科  https://zh.wikipedia.org/wiki/%E7%BA%A2%E9%BB%91%E6%A0%91
-6. 各种排序算法及比较https://blog.csdn.net/yushiyi6453/article/details/76407640
-7. 任何```container``` 都可以用 ```.size()``` 得到长度, 用reverse(a.begin(), a.end())进行reverse
-8. ```sliding window``` (leetcode 438 Find All Anagrams in a String 经典基础)
-9. ```vector``` 重载了 ==，比较相等的时候可以直接用```vector``` 重载了 =， 可以用于深拷贝
-10. In container, ```front() back() return a reference to the element, begin(), end() return iterator, 
+#### 2. ```stringstream fstream iostream``` 是io都可以用的
+#### 3. 数据结构中各种树总结https://www.jianshu.com/p/6f573afd2501
+#### 4. 自平衡二叉树旋转方法总结https://blog.csdn.net/saasanken/article/details/80796178
+#### 5. 红黑树旋转方法总结：维基百科  https://zh.wikipedia.org/wiki/%E7%BA%A2%E9%BB%91%E6%A0%91
+#### 6. 各种排序算法及比较https://blog.csdn.net/yushiyi6453/article/details/76407640
+#### 7. 任何```container``` 都可以用 ```.size()``` 得到长度, 用reverse(a.begin(), a.end())进行reverse
+#### 8. ```sliding window``` (leetcode 438 Find All Anagrams in a String 经典基础)
+#### 9. ```vector``` 重载了 ==，比较相等的时候可以直接用```vector``` 重载了 =， 可以用于深拷贝
+#### 10. In container, ```front() back() return a reference to the element, begin(), end() return iterator, 
  pop() Removes the element on top, top() Returns a reference to the top element```
 
    ##### (1)vector:
@@ -238,16 +238,17 @@ int main ()
 ```
 
 
-11. ```Two pointer```( leetcode 986. Interval List Intersections 经典基础）
-12. 数组下标记得用```size_t```
-13. ```
+#### 11. ```Two pointer```( leetcode 986. Interval List Intersections 经典基础）
+#### 12. 数组下标记得用```size_t```
+#### 13. 
+    ```
      unique_ptr<TrieNode> root;
      Trie():root(new TrieNode()) {}
     ``` 
     此指针指向的东西会自动析构 
-14. c++ STL 四种智能指针https://blog.csdn.net/k346k346/article/details/81478223
-15. c++ map与unordered_map区别及使用 https://blog.csdn.net/BillCYJ/article/details/78985895 
-16. sort:
+#### 14. c++ STL 四种智能指针https://blog.csdn.net/k346k346/article/details/81478223
+#### 15. c++ map与unordered_map区别及使用 https://blog.csdn.net/BillCYJ/article/details/78985895 
+#### 16. sort:
  利用greater 进行sort
  ```
  #include <iostream>
@@ -360,7 +361,7 @@ int main() {
     return EXIT_SUCCESS;
 }
  ```
-17. stringstream 空格分割字符串：https://blog.csdn.net/oNever_say_love/article/details/49123935
+#### 17. stringstream 空格分割字符串：https://blog.csdn.net/oNever_say_love/article/details/49123935
 
 并且可用于类型转换
 ```
