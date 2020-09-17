@@ -257,7 +257,7 @@ Trie():root(new TrieNode()) {}
 #### 14. c++ STL 四种智能指针https://blog.csdn.net/k346k346/article/details/81478223
 #### 15. c++ map与unordered_map区别及使用 https://blog.csdn.net/BillCYJ/article/details/78985895 
 #### 16. sort:
- 利用greater 进行sort
+ 利用greater 进行从大到小sort（默认从小到大）
  ```
  #include <iostream>
 #include <algorithm>
