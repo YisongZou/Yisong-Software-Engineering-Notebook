@@ -71,7 +71,7 @@ std::reverse(a.begin(),a.end()), #include<algorithm>
 struct默认public，class默认private
 
 函数返回值的几种情况https://blog.csdn.net/hankai1024/article/details/8039770
-1. ```unordered_map``` 直接map[key] = value即可， 而vector等如果相应元素没初始化，需要用push_back()，同时unordered_map<int,int> value默认初始值为0;
+##### 1. ```unordered_map``` 直接map[key] = value即可， 而vector等如果相应元素没初始化，需要用push_back()，同时unordered_map<int,int> value默认初始值为0;
 2. ```stringstream fstream iostream``` 是io都可以用的
 3. 数据结构中各种树总结https://www.jianshu.com/p/6f573afd2501
 4. 自平衡二叉树旋转方法总结https://blog.csdn.net/saasanken/article/details/80796178
