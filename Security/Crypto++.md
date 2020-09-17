@@ -1,83 +1,24 @@
-### 1 
+### 1
 ```
 linux环境下crypto++动态库生成与使用
-sudo apt-get install libcrypto++-dev libcrypto++-doc libcrypto++-utils
-#include <crypto++/aes.h>
-#include <crypto++/filters.h>
-#include <crypto++/modes.h>
 
+cpp Crypto++ 库官方wiki:
+https://www.cryptopp.com/wiki/Advanced_Encryption_Standard
 
-例子----------------------
-#include <iostream>
-#include <iomanip>
+cbc mode:
+https://www.cryptopp.com/wiki/CBC_Mode
 
-#include "modes.h"
-#include "aes.h"
-#include "filters.h"
+sha2:
+https://www.cryptopp.com/wiki/Sha2
 
-int main(int argc, char* argv[]) {
+安装步骤：
+下载cryptopp820.zip:
+https://www.cryptopp.com/release820.html
 
-    //Key and IV setup
-    //AES encryption uses a secret key of a variable length (128-bit, 196-bit or 256-   
-    //bit). This key is secretly exchanged between two parties before communication   
-    //begins. DEFAULT_KEYLENGTH= 16 bytes
-    CryptoPP::byte key[ CryptoPP::AES::DEFAULT_KEYLENGTH ], iv[ CryptoPP::AES::BLOCKSIZE ];
-    memset( key, 0x00, CryptoPP::AES::DEFAULT_KEYLENGTH );
-    memset( iv, 0x00, CryptoPP::AES::BLOCKSIZE );
+解压后安装：（从make and install开始往下）
+https://www.cryptopp.com/wiki/Linux
 
-    //
-    // String and Sink setup
-    //
-    std::string plaintext = "Now is the time for all good men to come to the aide...";
-    std::string ciphertext;
-    std::string decryptedtext;
+Makefile记得加：
+g++  -g -o $@ $< -L/usr/local/lib/ -lcryptopp
 
-    //
-    // Dump Plain Text
-    //
-    std::cout << "Plain Text (" << plaintext.size() << " bytes)" << std::endl;
-    std::cout << plaintext;
-    std::cout << std::endl << std::endl;
-
-    //
-    // Create Cipher Text
-    //
-    CryptoPP::AES::Encryption aesEncryption(key, CryptoPP::AES::DEFAULT_KEYLENGTH);
-    CryptoPP::CBC_Mode_ExternalCipher::Encryption cbcEncryption( aesEncryption, iv );
-
-    CryptoPP::StreamTransformationFilter stfEncryptor(cbcEncryption, new CryptoPP::StringSink( ciphertext ) );
-    stfEncryptor.Put( reinterpret_cast<const unsigned char*>( plaintext.c_str() ), plaintext.length() );
-    stfEncryptor.MessageEnd();
-
-    //
-    // Dump Cipher Text
-    //
-    std::cout << "Cipher Text (" << ciphertext.size() << " bytes)" << std::endl;
-
-    for( int i = 0; i < ciphertext.size(); i++ ) {
-
-        std::cout << "0x" << std::hex << (0xFF & static_cast<CryptoPP::byte>(ciphertext[i])) << " ";
-    }
-
-    std::cout << std::endl << std::endl;
-
-    //
-    // Decrypt
-    //
-    CryptoPP::AES::Decryption aesDecryption(key, CryptoPP::AES::DEFAULT_KEYLENGTH);
-    CryptoPP::CBC_Mode_ExternalCipher::Decryption cbcDecryption( aesDecryption, iv );
-
-    CryptoPP::StreamTransformationFilter stfDecryptor(cbcDecryption, new CryptoPP::StringSink( decryptedtext ) );
-    stfDecryptor.Put( reinterpret_cast<const unsigned char*>( ciphertext.c_str() ), ciphertext.size() );
-    stfDecryptor.MessageEnd();
-
-    //
-    // Dump Decrypted Text
-    //
-    std::cout << "Decrypted Text: " << std::endl;
-    std::cout << decryptedtext;
-    std::cout << std::endl << std::endl;
-
-    return 0;
-}
 ```
