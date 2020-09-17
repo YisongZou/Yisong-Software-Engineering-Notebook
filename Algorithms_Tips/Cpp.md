@@ -247,7 +247,23 @@ int main ()
     此指针指向的东西会自动析构 
 14. c++ STL 四种智能指针https://blog.csdn.net/k346k346/article/details/81478223
 15. c++ map与unordered_map区别及使用 https://blog.csdn.net/BillCYJ/article/details/78985895 
-16. 自定义sort:
+16. sort:
+ 利用greater 进行sort
+ ```
+ #include <iostream>
+#include <algorithm>
+using namespace std;
+int main() {
+    int arr[] = { 2, 4, 5, 3, 1 };
+    sort(arr, arr + 5, greater<int>());
+    for(int i = 0;i < 5;i++){
+    	cout<< arr[i] <<" ";
+    } 
+    return 0;
+}
+
+ ```
+ 自定义sort
  ```
  class Solution {
 public:
