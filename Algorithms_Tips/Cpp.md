@@ -205,6 +205,13 @@ Insert elements (public member function )
 ```
 
 ##### (8) set
+```
+size_type count (const value_type& val) const;
+Count elements with a specific value
+Searches the container for elements equivalent to val and returns the number of matches.
+
+Because all elements in a set container are unique, the function can only return 1 (if the element is found) or zero (otherwise).
+```
 
 ```
 //insert之后的内容是排序的
