@@ -1,5 +1,6 @@
 # Cpp
 
+#### https://www.cnblogs.com/1024th/p/10623541.html 排列组合公式
 #### HOW TO SPLIT A STRING IN C++ http://www.martinbroadhurst.com/how-to-split-a-string-in-c.html
 #### string和stringstream用法总结 https://blog.csdn.net/zaishaoyi/article/details/46682033
 #### C++:cin、cin.getline()、getline()的用法 https://blog.csdn.net/u011630575/article/details/79721024
