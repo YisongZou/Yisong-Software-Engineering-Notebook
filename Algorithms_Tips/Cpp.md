@@ -422,6 +422,8 @@ We can insert text into a stringstream with << and then extract it back with >>
 
 From Wikipedia, the free encyclopedia
 
+The erase–remove idiom cannot be used for containers that return const_iterator (e.g.: set)[5]
+
 The erase–remove idiom is a common C++ technique to eliminate elements that fulfill a certain criterion from a C++ Standard Library container.[1][2][3]
 ```
 // Use g++ -std=c++11 or clang++ -std=c++11 to compile.
