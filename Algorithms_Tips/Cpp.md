@@ -418,3 +418,45 @@ We can insert text into a stringstream with << and then extract it back with >>
      输入形式就是：
      cin>>num1>>num2;
 ```
+##### 18.Erase–remove idiom
+
+From Wikipedia, the free encyclopedia
+
+The erase–remove idiom is a common C++ technique to eliminate elements that fulfill a certain criterion from a C++ Standard Library container.[1][2][3]
+```
+// Use g++ -std=c++11 or clang++ -std=c++11 to compile.
+
+#include <algorithm>  // remove and remove_if
+#include <iostream>
+#include <vector>  // the general-purpose vector container
+
+bool IsOdd(int i) { return i & 1; }
+
+void Print(const std::vector<int>& vec) {
+  for (const auto& i : vec) {
+    std::cout << i << ' ';
+  }
+  std::cout << std::endl;
+}
+
+int main() {
+  // Initializes a vector that holds numbers from 0-9.
+  std::vector<int> v = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+  Print(v);
+
+  // Removes all elements with the value 5.
+  v.erase(std::remove(v.begin(), v.end(), 5), v.end());
+  Print(v);
+
+  // Removes all odd numbers.
+  v.erase(std::remove_if(v.begin(), v.end(), IsOdd), v.end());
+  Print(v);
+}
+
+/*
+Output:
+0 1 2 3 4 5 6 7 8 9
+0 1 2 3 4 6 7 8 9
+0 2 4 6 8
+*/
+```
