@@ -418,7 +418,7 @@ We can insert text into a stringstream with << and then extract it back with >>
      输入形式就是：
      cin>>num1>>num2;
 ```
-##### 18.Erase–remove idiom
+#### 18.Erase–remove idiom
 
 From Wikipedia, the free encyclopedia
 
