@@ -313,6 +313,12 @@ int main ()
   return 0;
 }
 
+The example does not produce any output, but it constructs different priority_queue objects:
+- First is empty.
+- Second contains the four ints defined for myints, with 60 (the highest) at its top.
+- Third has the same four ints, but because it uses greater instead of the default (which is less), it has 10 as its top element.
+- Fourth and fifth are very similar to first: they are both empty, except that these use mycomparison for comparisons, which is a special stateful comparison function that behaves differently depending on a flag set on construction.
+
 ```
 
 #### 11. 
