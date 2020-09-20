@@ -178,6 +178,29 @@ Searches the container for elements whose key is k and returns the number of ele
 Because unordered_map containers do not allow for duplicate keys, this means that the function actually
 returns 1 if an element with that key exists in the container, and zero otherwise.
 ```
+```
+遍历map
+You can achieve this like following :
+
+map<string, int>::iterator it;
+for ( it = symbolTable.begin(); it != symbolTable.end(); it++ )
+{
+    std::cout << it->first  // string (key)
+              << ':'
+              << it->second   // string's value 
+              << std::endl ;
+}
+
+With C++11 ( and onwards ),
+for (auto const& x : symbolTable)
+{
+    std::cout << x.first  // string (key)
+              << ':' 
+              << x.second // string's value 
+              << std::endl ;
+}
+
+```
 ##### (6)deque:
 ```
 
