@@ -1,5 +1,5 @@
 # Cpp
-
+#### https://www.cnblogs.com/lsgxeva/p/7787438.html c++11 类默认函数的控制："=default" 和 "=delete"函数
 #### https://www.cnblogs.com/sunchaothu/p/10389842.html c++单例模式
 
 #### https://www.cnblogs.com/1024th/p/10623541.html 排列组合公式
