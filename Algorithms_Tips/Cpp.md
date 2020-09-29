@@ -1,5 +1,7 @@
 # Cpp
 
+#### https://www.cnblogs.com/sunchaothu/p/10389842.html c++单例模式
+
 #### https://www.cnblogs.com/1024th/p/10623541.html 排列组合公式
 ```
  tgamma(n) == (n-1)!
