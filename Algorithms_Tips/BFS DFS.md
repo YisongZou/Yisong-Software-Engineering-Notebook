@@ -24,3 +24,6 @@ while queue 不空：
     level ++;
 ```
 2. DFS https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/
+
+3 Difference between dfs and bfs
+https://www.tutorialspoint.com/difference-between-bfs-and-dfs#:~:text=Time%20Complexity%20of%20BFS%20%3D%20O,vertices%20and%20E%20is%20edges.
