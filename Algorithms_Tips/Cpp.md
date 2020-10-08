@@ -95,7 +95,7 @@ front() back() return a reference to the element, begin(), end() return iterator
 
    ##### (1)vector:
 ```
-push_back(), void pop_back(), begin(), end(), front(), back();
+push_back(), void pop_back(), begin(), end(), front(), back(), myvector.resize(12)(初始化的时候用);
 
 erase():
 iterator erase (const_iterator position); 
