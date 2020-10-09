@@ -1,4 +1,6 @@
 # Cpp
+#### 条件运算符（conditional operator, ?:）
+max =(a > b)? a : b ;
 #### https://www.cnblogs.com/lsgxeva/p/7787438.html c++11 类默认函数的控制："=default" 和 "=delete"函数
 #### https://www.cnblogs.com/sunchaothu/p/10389842.html c++单例模式
 
