@@ -561,3 +561,51 @@ switch(expression) {
       statement(s);
 }
 ```
+
+#### 20. Priority Queue 自己定义comparator() Leetcode692
+```
+class Solution {
+private:
+    typedef pair<string, int> Node;
+public:
+    
+    
+struct comparator
+{
+    bool operator()(const Node& a, const Node& b)
+    {
+        //order by alphabet ASC
+            if (a.second == b.second) 
+                return  a.first < b.first;
+            // order by freq DESC
+            return a.second > b.second;
+    }
+};
+    
+    vector<string> topKFrequent(vector<string>& words, int k) {
+        unordered_map<string, int> count;
+        for (const string& word : words)
+            ++count[word];
+
+        // Min heap by frequency
+        priority_queue<Node, vector<Node>, comparator> q;
+        
+        // O(n*logk)
+        for (const auto& kv : count) {
+            q.push(kv);
+            if (q.size() > k) q.pop();
+        }
+        
+        vector<string> ans;
+        
+        while (!q.empty()) {
+            ans.push_back(q.top().first);
+            q.pop();
+        }
+        
+        std::reverse(ans.begin(), ans.end());
+        return ans;
+    }
+};
+
+```
