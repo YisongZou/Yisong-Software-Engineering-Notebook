@@ -207,7 +207,10 @@ for (auto const& x : symbolTable)
 ```
 ##### (6)deque:
 ```
-
+front
+Access first element (public member function )
+back
+Access last element (public member function )
 push_back
 Add element at the end (public member function )
 push_front
