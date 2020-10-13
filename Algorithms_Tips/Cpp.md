@@ -545,3 +545,19 @@ Output:
 0 2 4 6 8
 */
 ```
+
+#### 19. Switch case
+```
+switch(expression) {
+   case constant-expression  :
+      statement(s);
+      break; //optional
+   case constant-expression  :
+      statement(s);
+      break; //optional
+  
+   // you can have any number of case statements.
+   default : //Optional
+      statement(s);
+}
+```
