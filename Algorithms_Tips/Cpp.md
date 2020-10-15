@@ -1,4 +1,5 @@
 # Cpp
+#### map 不能直接排序，要转换到vector中
 #### 条件运算符（conditional operator, ?:）
 max =(a > b)? a : b ;
 #### https://www.cnblogs.com/lsgxeva/p/7787438.html c++11 类默认函数的控制："=default" 和 "=delete"函数
