@@ -76,6 +76,8 @@ func LowerBound(nums []int, target int) int {
 }
 
 //查找指定值第一次出现的位置
+查找满足 x == target 的第一个元素，如果不存在，返回 -1。
+只需要先查找满足 x >= target 的下界，然后再判断下界与 target 是否相等。只需在模板代码中增加一个判断：
 func searchFirst(nums []int, target int) int {
     left, right := 0, len(nums)-1
     for left <= right {
@@ -93,6 +95,8 @@ func searchFirst(nums []int, target int) int {
 }
 
 //查找指定值最后一次出现的位置
+查找满足 x == target 的最后一个元素，如果不存在，返回 -1。
+只需要先查找满足 x <= target 的上界，然后再判断上界与 target 是否相等。上文中已经描述了如何将查找上界转化为查找下界，直接调用模板代码：
 func searchLast(nums []int, target int) int {
     left, right := 0, len(nums)-1
     for left <= right {
