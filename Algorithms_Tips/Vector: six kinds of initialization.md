@@ -41,3 +41,9 @@ ilist3初始化为两个迭代器指定范围中元素的拷贝，范围中的�
     vector<vector<int> > visited(row,vector<int>(column,6));//初始化一个 二维vector 行row,列column ,且 值为data=6 自定义data;
     vector<vector<int> > vecto(row,vector<int>(vt[0].begin()+1,vt[0].begin()+3));////初始化一个 二维vector 行row,第二个参数为一维vector;
 ```
+
+#### 四维vector
+
+```
+  vector<vector<vector<vector<int>>>> neighborsToTrickle(N, vector<vector<vector<int>>>(N, vector<vector<int>>()));
+```
