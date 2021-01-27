@@ -3,6 +3,7 @@ All of programming
 ```
 https://play.google.com/books/reader?id=-zViCgAAQBAJ&pg=GBS.PA617.w.5.0.58
 
+### 1 
 ```
 https://en.wikipedia.org/wiki/Polymorphism_(computer_science)
 
@@ -27,4 +28,9 @@ https://en.wikipedia.org/wiki/Polymorphism_(computer_science)
 
 ```
 虚函数是C++中用于实现多态(polymorphism)的机制。核心理念就是通过基类访问派生类定义的函数。
+```
+
+### 2. C++中public、protected、private继承的区别
+```
+https://blog.csdn.net/qq583083658/article/details/80740299
 ```
