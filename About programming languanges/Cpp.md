@@ -32,5 +32,7 @@ https://en.wikipedia.org/wiki/Polymorphism_(computer_science)
 
 ### 2. C++中public、protected、private继承的区别
 ```
+https://blog.csdn.net/qq_42475914/article/details/94590210?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.control
+
 https://blog.csdn.net/qq583083658/article/details/80740299
 ```
