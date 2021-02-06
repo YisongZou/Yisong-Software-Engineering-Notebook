@@ -1,5 +1,28 @@
 # Cpp
-#### map 不能直接排序，要转换到vector中
+#### map 不能直接排序：
+```
+struct CmpByKeyLength {
+  bool operator()(const string& k1, const string& k2) {
+    return k1.length() < k2.length();
+  }
+};
+
+
+int main() {
+  map<string, int, CmpByKeyLength> name_score_map;
+  name_score_map["LiMin"] = 90; 
+  name_score_map["ZiLinMi"] = 79; 
+  name_score_map["BoB"] = 92; 
+  name_score_map.insert(make_pair("Bing",99));
+  name_score_map.insert(make_pair("Albert",86));
+  for (map<string, int>::iterator iter = name_score_map.begin();
+       iter != name_score_map.end();
+       ++iter) {
+    cout << *iter << endl;
+  }
+  return 0;
+}
+```
 #### 条件运算符（conditional operator, ?:）
 max =(a > b)? a : b ;
 #### https://www.cnblogs.com/lsgxeva/p/7787438.html c++11 类默认函数的控制："=default" 和 "=delete"函数
