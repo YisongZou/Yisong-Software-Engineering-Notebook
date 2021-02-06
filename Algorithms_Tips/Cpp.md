@@ -1,5 +1,5 @@
 # Cpp
-#### map 不能直接排序：
+#### map key自定排序：
 ```
 struct CmpByKeyLength {
   bool operator()(const string& k1, const string& k2) {
