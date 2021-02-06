@@ -36,7 +36,7 @@ int main() {
   name_score_map.insert(make_pair("Albert",86));
  //把map中元素转存到vector中 
   vector<PAIR> name_score_vec(name_score_map.begin(), name_score_map.end());
-  sort(name_score_vec.begin(), name_score_vec.end(), CmpByValue());
+  sort(name_score_vec.begin(), name_score_vec.end(), CmpByValue);
  // sort(name_score_vec.begin(), name_score_vec.end(), cmp_by_value);
   for (int i = 0; i != name_score_vec.size(); ++i) {
     cout << name_score_vec[i] << endl;
