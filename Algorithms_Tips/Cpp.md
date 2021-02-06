@@ -27,21 +27,26 @@ int main() {
 ### map value 不能直接排序，需要转到vector中
 ```
 
+
+ static bool mySort(pair<int,int> & A, pair<int,int>& B){
+    return A.second > B.second;
+}
+
+int getFrequence(vector<int> in){
+    unordered_map<int,int> mp;
+    for(auto num: in){
+        ++mp[num];
+    }
+    vector<pair<int,int>> v(mp.begin(),mp.end());
+    sort(v.begin(),v.end(),mySort);
+    return v[0].first;
+}
+
+
 int main() {
-  map<string, int> name_score_map;
-  name_score_map["LiMin"] = 90;
-  name_score_map["ZiLinMi"] = 79;
-  name_score_map["BoB"] = 92;
-  name_score_map.insert(make_pair("Bing",99));
-  name_score_map.insert(make_pair("Albert",86));
- //把map中元素转存到vector中 
-  vector<PAIR> name_score_vec(name_score_map.begin(), name_score_map.end());
-  sort(name_score_vec.begin(), name_score_vec.end(), CmpByValue);
- // sort(name_score_vec.begin(), name_score_vec.end(), cmp_by_value);
-  for (int i = 0; i != name_score_vec.size(); ++i) {
-    cout << name_score_vec[i] << endl;
-  }
-  return 0;
+    int ans = getFrequence({1,1,2,3,4,5,5,5});
+    cout << ans << endl;
+}
 
 ```
 #### 条件运算符（conditional operator, ?:）
