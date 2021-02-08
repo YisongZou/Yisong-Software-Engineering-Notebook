@@ -36,3 +36,6 @@ https://blog.csdn.net/qq_42475914/article/details/94590210?utm_medium=distribute
 
 https://blog.csdn.net/qq583083658/article/details/80740299
 ```
+
+### 3. C/C++---static函数，static成员函数，static变量，static成员变量 再来理一理
+https://blog.csdn.net/FreeApe/article/details/50979425
