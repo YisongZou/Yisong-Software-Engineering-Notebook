@@ -61,7 +61,7 @@ func LowerBound(nums []int, target int) int {
     return left - 1 // 返回下界的下标
 }
 
-// 查找满足 x < target 的下界的下标
+// 查找满足 x < target 的上界的下标
 func LowerBound(nums []int, target int) int {
     left, right := 0, len(nums)-1
     for left <= right {
