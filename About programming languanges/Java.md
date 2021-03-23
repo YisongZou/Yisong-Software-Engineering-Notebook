@@ -7,7 +7,7 @@ https://www.scientecheasy.com/2020/09/collection-hierarchy-in-java.html/
 ![Java Hierarchy](https://github.com/YisongZou/Yisong-Software-Engineering-Notebook/blob/master/About%20programming%20languanges/%E6%88%AA%E5%B1%8F2021-02-03%20%E4%B8%8B%E5%8D%8812.19.15.png)
 e-extends i-implements
 
-###继承转型 参考：[廖雪峰]（https://www.liaoxuefeng.com/wiki/1252599548343744/1260454548196032）
+### 继承转型 参考：[廖雪峰]（https://www.liaoxuefeng.com/wiki/1252599548343744/1260454548196032）
 ```
 向上转型
 如果一个引用变量的类型是Student，那么它可以指向一个Student类型的实例：
