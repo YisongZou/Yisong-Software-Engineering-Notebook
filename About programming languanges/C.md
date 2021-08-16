@@ -13,4 +13,4 @@ https://docs.microsoft.com/en-us/cpp/preprocessor/hash-define-directive-c-cpp?vi
 https://blog.csdn.net/K346K346/article/details/48877773
 
 #### 5. extern详解
-https://www.huaweicloud.com/articles/c0cd49fe4402dcbe6459f058df8bd2fb.html
+https://blog.csdn.net/xingjiarong/article/details/47656339
