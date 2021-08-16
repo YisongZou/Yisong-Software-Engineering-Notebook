@@ -18,4 +18,6 @@ https://blog.csdn.net/xingjiarong/article/details/47656339
 https://www.cnblogs.com/lanhaicode/p/10633125.html
 
 #### 6. Static
+https://stackoverflow.com/questions/572547/what-does-static-mean-in-c
+
 https://www.jianshu.com/p/f413ba3b2728
