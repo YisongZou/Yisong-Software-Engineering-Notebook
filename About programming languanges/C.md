@@ -14,3 +14,4 @@ https://blog.csdn.net/K346K346/article/details/48877773
 
 #### 5. extern详解
 https://blog.csdn.net/xingjiarong/article/details/47656339
+https://www.cnblogs.com/lanhaicode/p/10633125.html
