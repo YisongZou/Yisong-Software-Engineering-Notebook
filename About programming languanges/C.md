@@ -11,6 +11,8 @@ https://docs.microsoft.com/en-us/cpp/preprocessor/hash-define-directive-c-cpp?vi
 
 #### 4.头文件详解
 https://blog.csdn.net/K346K346/article/details/48877773
+一般的c和c++工程头文件里面一般放什么
+https://blog.csdn.net/kwdecsdn/article/details/74026358
 
 #### 5. extern详解
 https://blog.csdn.net/xingjiarong/article/details/47656339
