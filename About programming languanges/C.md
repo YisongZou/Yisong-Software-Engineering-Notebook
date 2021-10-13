@@ -23,3 +23,6 @@ https://www.cnblogs.com/lanhaicode/p/10633125.html
 https://stackoverflow.com/questions/572547/what-does-static-mean-in-c
 
 https://www.jianshu.com/p/f413ba3b2728
+
+#### 7. .so and .a files
+https://stackoverflow.com/questions/9809213/what-are-a-and-so-files
