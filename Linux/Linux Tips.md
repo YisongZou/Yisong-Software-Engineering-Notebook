@@ -11,5 +11,5 @@ https://blog.csdn.net/CC_Arturia/article/details/72540910
 https://blog.csdn.net/Axela30W/article/details/78981749
 
 #### 3. ls
-Practical applications of ‘ls’ command in Linux
+```Practical applications of ‘ls’ command in Linux```
 https://www.geeksforgeeks.org/practical-applications-ls-command-linux/
