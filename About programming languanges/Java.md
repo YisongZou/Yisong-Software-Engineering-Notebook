@@ -91,3 +91,7 @@ public class Main {
  
  ### Java 包
  https://www.runoob.com/java/java-package.html
+ 
+ 
+### abstract class和interface的区别
+https://blog.csdn.net/b271737818/article/details/3950245
