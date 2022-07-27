@@ -16,7 +16,8 @@ https://segmentfault.com/a/1190000021529503
 ```
 1. s.length() 返回长度
 2. s.charAt() 返回对应的字符
-3. StringBuilder
+3. s.toCharArray() 返回字符串对应的字符数组
+4. StringBuilder
   StringBuilder sb = new StringBuilder(1024);
   for (int i = 0; i < 1000; i++) {
       sb.append(',');
