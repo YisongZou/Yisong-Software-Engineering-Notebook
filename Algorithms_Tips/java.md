@@ -32,5 +32,12 @@ https://segmentfault.com/a/1190000021529503
 ```
 #### Array
 ```
-array.length array的长度(length is a final variable applicable for arrays. With the help of the length variable, we can obtain the size of the array. )
+array.length array的长度
+(length is a final variable applicable for arrays. 
+With the help of the length variable, we can obtain the size of the array. )
+
+java 在声明了一个数组，并为其分配好存储空间后，未赋值之前会默认对其初始化：
+整形数组 默认初始值为0；
+布尔数组默认初始值为 false；
+String 数组以及 对象数组初始值为 null.
 ```
