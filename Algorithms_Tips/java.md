@@ -7,6 +7,11 @@ i & (i - 1) 将 i 的二进制形式中最右边的1变成0. i中1的个数比i 
 https://segmentfault.com/a/1190000021529503
 (Integer 和 String 传入函数之后并不改变原来的值，因为 Integer a = 1 或者 String s = "abc" 都相当于在堆上new了新的变量
 ```
+
+#### Math
+```
+1. Math.max(a,b) 取最大值
+```
 #### Integer
 ```
 1. Inteter.MAX_VALUE 表示2^31 -1
