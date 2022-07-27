@@ -1,7 +1,7 @@
 #### Tips
 ```
 i & (i - 1) 将 i 的二进制形式中最右边的1变成0. i中1的个数比i & (i - 1)中1的个数多1
-
+```
 #### 为什么大家都说Java中只有值传递?
 ```
 https://segmentfault.com/a/1190000021529503
@@ -23,4 +23,8 @@ https://segmentfault.com/a/1190000021529503
       sb.append(i);
   }
   String s = sb.toString();
+```
+#### Array
+```
+array.length array的长度(length is a final variable applicable for arrays. With the help of the length variable, we can obtain the size of the array. )
 ```
