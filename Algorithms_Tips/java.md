@@ -32,9 +32,11 @@ https://segmentfault.com/a/1190000021529503
 ```
 #### Array
 ```
-array.length array的长度
-(length is a final variable applicable for arrays. 
-With the help of the length variable, we can obtain the size of the array. )
+a.length array a的长度 (length is a final variable applicable for arrays. With the help of the length variable, we can obtain the size of the array. )
+
+Array.sort(a); 给array a排序
+If you use an Integer[] instead of int[], then you can pass a Comparator as 2nd argument to the sort method. To impose reverse ordering, you can make use of Collections.reverseOrder() method:
+Arrays.sort(arr, Collections.reverseOrder());
 
 java 在声明了一个数组，并为其分配好存储空间后，未赋值之前会默认对其初始化：
 整形数组 默认初始值为0；
