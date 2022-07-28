@@ -1,3 +1,6 @@
+### Java刷题常用API[https://www.cnblogs.com/chzhyang/p/13494554.html]
+### JAVA最常用容器、API[https://www.i4k.xyz/article/qq_44731744/114228438#2ArrayList_214]
+
 #### Tips
 ```
 i & (i - 1) 将 i 的二进制形式中最右边的1变成0. i中1的个数比i & (i - 1)中1的个数多1
