@@ -1,5 +1,6 @@
 #### [Java刷题常用API](https://www.cnblogs.com/chzhyang/p/13494554.html)
 #### [Java中ArrayList、LinkedList、Vector、Stack的比较](https://developer.51cto.com/article/605514.html)
+##### (快速访问ArrayList，快速增删LinkedList，单线程都可以用，多线程只能用同步类Vector)
 #### [JAVA最常用容器、API详细版](https://www.i4k.xyz/article/qq_44731744/114228438#2ArrayList_214)
 
 #### Tips
