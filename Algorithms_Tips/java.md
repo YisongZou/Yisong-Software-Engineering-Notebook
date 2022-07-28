@@ -1,5 +1,5 @@
-### Java刷题常用API[https://www.cnblogs.com/chzhyang/p/13494554.html]
-### JAVA最常用容器、API[https://www.i4k.xyz/article/qq_44731744/114228438#2ArrayList_214]
+### (Java刷题常用API)[https://www.cnblogs.com/chzhyang/p/13494554.html]
+### (JAVA最常用容器、API)[https://www.i4k.xyz/article/qq_44731744/114228438#2ArrayList_214]
 
 #### Tips
 ```
