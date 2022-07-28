@@ -37,7 +37,17 @@ https://segmentfault.com/a/1190000021529503
 ```
 a.length array a的长度 (length is a final variable applicable for arrays. With the help of the length variable, we can obtain the size of the array. )
 
-Array.sort(a); 给array a排序
+Arrays.asList 
+The asList() method of java.util.Arrays class is used to return a fixed-size list backed by the specified array. This method acts as a bridge between array-based and collection-based APIs, in combination with Collection.toArray(). The returned list is serializable and implements RandomAccess.
+            // Creating Arrays of String type
+            String a[]
+                = new String[] { "A", "B", "C", "D" };
+            // Getting the list view of Array
+            List<String> list = Arrays.asList(a);
+            也可以 Arrays.asList("A", "B", "C", "D");
+
+
+Arrays.sort(a); 给array a排序
 If you use an Integer[] instead of int[], then you can pass a Comparator as 2nd argument to the sort method. To impose reverse ordering, you can make use of Collections.reverseOrder() method:
 Arrays.sort(arr, Collections.reverseOrder());
 
