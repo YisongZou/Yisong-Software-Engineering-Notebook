@@ -58,3 +58,9 @@ java 在声明了一个数组，并为其分配好存储空间后，未赋值之
 布尔数组默认初始值为 false；
 String 数组以及 对象数组初始值为 null.
 ```
+
+#### Map
+```
+1.getOrDefault
+mp.getOrDefault()https://www.geeksforgeeks.org/hashmap-getordefaultkey-defaultvalue-method-in-java-with-examples/
+```
