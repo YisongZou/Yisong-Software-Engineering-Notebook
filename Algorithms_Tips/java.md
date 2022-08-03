@@ -62,5 +62,8 @@ String 数组以及 对象数组初始值为 null.
 #### Map
 ```
 1.getOrDefault
-mp.getOrDefault()https://www.geeksforgeeks.org/hashmap-getordefaultkey-defaultvalue-method-in-java-with-examples/
+mp.getOrDefault(Object key, V defaultValue)
+key: which is the key of the element whose value has to be obtained.
+defaultValue: which is the default value that has to be returned, if no value is mapped with the specified key.
+
 ```
