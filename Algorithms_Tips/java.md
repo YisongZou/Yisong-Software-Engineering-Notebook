@@ -67,3 +67,9 @@ key: which is the key of the element whose value has to be obtained.
 defaultValue: which is the default value that has to be returned, if no value is mapped with the specified key.
 
 ```
+
+#### Character
+```
+Character.isLetterOrDigit()
+Character.toLowerCase()
+```
