@@ -38,7 +38,7 @@ referred to by name when creating database segments.
 Oracle stores data logically in tablespaces and physically in datafiles associated with the corresponding tablespace.
 ```
 
-#### Sharding
+#### Sharding (One kind of partitioning, horizontal partition)
 ```
 A database shard, or simply a shard, is a horizontal partition of data in a database or search engine. Each shard is held on a 
 separate database server instance, to spread load.
@@ -47,7 +47,7 @@ Some data within a database remains present in all shards,[a] but some appear on
 as the single source for this subset of data.[1]
 ```
 
-[Partition and shard difference](https://www.singlestore.com/blog/database-sharding-vs-partitioning-whats-the-difference/)
+[Partition and shard](https://www.singlestore.com/blog/database-sharding-vs-partitioning-whats-the-difference/)
 
 #### Partitioning
 ```
