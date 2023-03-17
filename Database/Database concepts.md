@@ -47,7 +47,7 @@ Some data within a database remains present in all shards,[a] but some appear on
 as the single source for this subset of data.[1]
 ```
 
-Partition and shard difference[https://www.singlestore.com/blog/database-sharding-vs-partitioning-whats-the-difference/]
+[Partition and shard difference](https://www.singlestore.com/blog/database-sharding-vs-partitioning-whats-the-difference/)
 
 #### Partitioning
 ```
