@@ -46,3 +46,14 @@ separate database server instance, to spread load.
 Some data within a database remains present in all shards,[a] but some appear only in a single shard. Each shard (or server) acts 
 as the single source for this subset of data.[1]
 ```
+
+Partition and shard difference[https://www.singlestore.com/blog/database-sharding-vs-partitioning-whats-the-difference/]
+
+#### Partitioning
+```
+A partition is a division of a logical database or its constituent elements into distinct independent parts. Database partitioning
+is normally done for manageability, performance or availability[1] reasons, or for load balancing. It is popular in distributed 
+database management systems, where each partition may be spread over multiple nodes, with users at the node performing local 
+transactions on the partition. This increases performance for sites that have regular transactions involving certain views of 
+data, whilst maintaining availability and security.
+```
