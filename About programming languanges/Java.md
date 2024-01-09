@@ -7,6 +7,8 @@ https://www.scientecheasy.com/2020/09/collection-hierarchy-in-java.html/
 ![Java Hierarchy](https://github.com/YisongZou/Yisong-Software-Engineering-Notebook/blob/master/About%20programming%20languanges/%E6%88%AA%E5%B1%8F2021-02-03%20%E4%B8%8B%E5%8D%8812.19.15.png)
 e-extends i-implements
 
+![](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210315172345/Java-Collections-Framework-Hierarchy.png)
+
 ### 继承转型 参考：[廖雪峰](https://www.liaoxuefeng.com/wiki/1252599548343744/1260454548196032)  廖雪峰java教程-面向对象编程-面向对象基础-继承
 ```
 向上转型
