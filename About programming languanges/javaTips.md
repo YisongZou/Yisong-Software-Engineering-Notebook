@@ -1,5 +1,8 @@
 1. 随机数
 ```
+random.nextInt(Interger int);
+
+Eg:
        ArrayList<Integer> nums;
    
        public int getRandom() {
