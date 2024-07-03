@@ -1,5 +1,8 @@
 1. 随机数
+
 ```
+import java.util.Random;
+
 random.nextInt(Interger int);
 
 Eg:
