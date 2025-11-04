@@ -1,14 +1,17 @@
 Java Concurrency Q&A; — Markdown Summary
 
-'''
-object的wait/notify/notifyall 来实现thread synchronization   -> 【扩展】什么是spin lock什么是mutex 在java里是什么对应？两个各有什么优劣？【继续拓展】hybrid mutex？
-ReentrantLock & Condition  condition是什么？condition怎么用？为什么condition要用在lock context里？
+
+
+
 经典producer/consumer boundedbuffer queue怎么实现？什么是two lock queue？什么是nonblocking queue实现？
 什么是semaphore？怎么用？
 hashmap怎么实现的？如果是separate chaining来resolve conflict的hashmap 那么怎么样让它threadsafe并且lockfree并且可以fast？
-'''
+```
 
 # Java Concurrency Q&A — Markdown Summary
+```
+object的wait/notify/notifyall 来实现thread synchronization
+```
 ## 1) Thread synchronization using `Object.wait()` / `notify()` / `notifyAll()`
 **Overview**
 In Java every object has a monitor. The classic low-level coordination methods are:
@@ -31,6 +34,9 @@ synchronized(lock) {
 }
 ```
 ---
+```
+什么是spin lock什么是mutex 在java里是什么对应？两个各有什么优劣？【继续拓展】hybrid mutex？
+```
 ## 2) Spin lock vs Mutex — Java equivalents, pros/cons, and hybrid mutex
 **Definitions**
 - **Spin lock (busy-wait):** Thread repeatedly polls a flag or uses CAS until it acquires the lock; it does not block or yield the CPU. Good when the expected wait time is very short.
@@ -60,6 +66,9 @@ class SpinLock {
 **Hybrid**
 - JVM lock implementations are hybrid: they may spin briefly before parking a thread. You can also implement hybrid algorithms using a bounded spin loop followed by `LockSupport.park()` or using `ReentrantLock.tryLock(timeout, unit)`.
 ---
+```
+ReentrantLock & Condition  condition是什么？condition怎么用？为什么condition要用在lock context里？
+```
 ## 3) `ReentrantLock` & `Condition`: what is a Condition, how to use, why inside Lock context?
 **Concept**
 - `ReentrantLock` is a `Lock` implementation with features beyond `synchronized`: tryLock, timed lock acquisition, interruptible locking, configurable fairness.
