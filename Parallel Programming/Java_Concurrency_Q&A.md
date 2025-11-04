@@ -1,4 +1,14 @@
 Java Concurrency Q&A; — Markdown Summary
+
+'''
+object的wait/notify/notifyall 来实现thread synchronization   -> 【扩展】什么是spin lock什么是mutex 在java里是什么对应？两个各有什么优劣？【继续拓展】hybrid mutex？
+ReentrantLock & Condition  condition是什么？condition怎么用？为什么condition要用在lock context里？
+经典producer/consumer boundedbuffer queue怎么实现？什么是two lock queue？什么是nonblocking queue实现？
+什么是semaphore？怎么用？
+hashmap怎么实现的？如果是separate chaining来resolve conflict的hashmap 那么怎么样让它threadsafe并且lockfree并且可以fast？
+<img width="468" height="142" alt="image" src="https://github.com/user-attachments/assets/539f4ade-3dab-409b-8ec2-7d4e9ca1c962" />
+'''
+
 # Java Concurrency Q&A — Markdown Summary
 ## 1) Thread synchronization using `Object.wait()` / `notify()` / `notifyAll()`
 **Overview**
