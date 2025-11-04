@@ -4,9 +4,8 @@ Java Concurrency Q&A; — Markdown Summary
 
 
 
-什么是semaphore？怎么用？
-hashmap怎么实现的？如果是separate chaining来resolve conflict的hashmap 那么怎么样让它threadsafe并且lockfree并且可以fast？
-```
+
+
 
 # Java Concurrency Q&A — Markdown Summary
 ```
@@ -108,6 +107,9 @@ class BoundedBuffer<T> {
 }
 ```
 ---
+```
+经典producer/consumer boundedbuffer queue怎么实现？什么是two lock queue？什么是nonblocking queue实现？
+```
 ## 4) Classic producer/consumer bounded buffer — implementations
 **High-level: BlockingQueue**
 - Use `ArrayBlockingQueue` or `LinkedBlockingQueue`. They hide synchronization and correctness tricky parts.
@@ -124,6 +126,9 @@ q.put(1); // blocks if full
 Integer v = q.take(); // blocks if empty
 ```
 ---
+```
+什么是semaphore？怎么用？
+```
 ## 5) Semaphore — what and how to use
 **Definition**
 - `Semaphore` controls a set of permits. `acquire()` consumes a permit (blocks if none), `release()` returns a permit.
@@ -145,6 +150,9 @@ try {
 - `Semaphore` can be fair (FIFO) if constructed with fairness parameter.
 - A `Semaphore` with zero initial permits can be used as a latch (not typical; prefer CountDownLatch).
 ---
+```
+hashmap怎么实现的？如果是separate chaining来resolve conflict的hashmap 那么怎么样让它threadsafe并且lockfree并且可以fast？
+```
 ## 6) HashMap with separate chaining — how to make it thread-safe, lock-free, and fast?
 **Background**
 - Simple chained HashMap: array of buckets; each bucket is a linked list (or tree). Plain `HashMap` is not thread-safe.
