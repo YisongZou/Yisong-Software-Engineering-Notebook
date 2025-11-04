@@ -3,7 +3,7 @@ Java Concurrency Q&A; — Markdown Summary
 
 
 
-经典producer/consumer boundedbuffer queue怎么实现？什么是two lock queue？什么是nonblocking queue实现？
+
 什么是semaphore？怎么用？
 hashmap怎么实现的？如果是separate chaining来resolve conflict的hashmap 那么怎么样让它threadsafe并且lockfree并且可以fast？
 ```
