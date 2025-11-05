@@ -1,3 +1,7 @@
+### Protected 同包+子类可访问， default(无修饰符）同包可访问
+### private和 protected 不能修饰顶级类
+
+
 ### public private 继承
 
 https://blog.csdn.net/eric_4300741/article/details/52851590
