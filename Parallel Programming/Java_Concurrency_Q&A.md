@@ -24,13 +24,70 @@ In Java every object has a monitor. The classic low-level coordination methods a
 - Prefer higher-level constructs (`BlockingQueue`, `Lock`+`Condition`) over raw wait/notify for clarity and safety.
 **Markdown Example (Java):**
 ```java
-synchronized(lock) {
- while (!condition) {
- lock.wait(); // releases lock, waits
- }
- // do work
- lock.notifyAll();
+import java.util.LinkedList;
+import java.util.Queue;
+
+class BoundedBuffer {
+    private final Queue<Integer> queue = new LinkedList<>();
+    private final int capacity = 5;
+    private final Object lock = new Object();
+
+    // Producer
+    public void put(int value) throws InterruptedException {
+        synchronized (lock) {
+            while (queue.size() == capacity) {
+                lock.wait(); // wait until space is available
+            }
+            queue.add(value);
+            System.out.println("Produced: " + value);
+            lock.notifyAll(); // wake up consumers
+        }
+    }
+
+    // Consumer
+    public int take() throws InterruptedException {
+        synchronized (lock) {
+            while (queue.isEmpty()) {
+                lock.wait(); // wait until an item is available
+            }
+            int val = queue.remove();
+            System.out.println("Consumed: " + val);
+            lock.notifyAll(); // wake up producers
+            return val;
+        }
+    }
 }
+
+public class WaitNotifyExample {
+    public static void main(String[] args) {
+        BoundedBuffer buffer = new BoundedBuffer();
+
+        // Producer thread
+        new Thread(() -> {
+            try {
+                for (int i = 1; i <= 10; i++) {
+                    buffer.put(i);
+                    Thread.sleep(200); // simulate work
+                }
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            }
+        }).start();
+
+        // Consumer thread
+        new Thread(() -> {
+            try {
+                for (int i = 1; i <= 10; i++) {
+                    buffer.take();
+                    Thread.sleep(500); // simulate work
+                }
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            }
+        }).start();
+    }
+}
+
 ```
 ---
 ```
